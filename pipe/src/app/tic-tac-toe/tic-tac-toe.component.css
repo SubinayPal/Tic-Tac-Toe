@@ -1,0 +1,23 @@
+td{
+    height: 80px;
+    width: 80px;
+}
+table{
+    border: 1px;
+    background: linear-gradient(red,purple);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    
+}
+button{
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

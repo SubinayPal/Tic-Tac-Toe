@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+
+
+</head>
+<body>
+    <table border="1" id="t1" cellspacing="0" cellpadding="2" align="center">
+        <tr>
+            <td colspan="3" class="heading">TIC-TAC-TOE</td>
+        </tr>
+        <tr *ngFor="let i of [0,1,2]">
+            <td *ngFor="let j of [0,1,2]"><button class="c1" [disabled]="!validate"  (click)="fun($event); check();" value="{{arr[i*3+j]}}">{{arr[i*3+j]}}</button></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="heading">{{mark1}}'s Turn</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="heading">{{mark}} {{msg}} the match...</td>
+        </tr>
+
+    </table>
+</body>
+</html>

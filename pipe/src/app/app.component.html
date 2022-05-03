@@ -1,0 +1,101 @@
+<!-- <p>The hero's birthday is {{ birthday | date : 'dd/MM/yy'}}</p>
+<p>The hero's birthday is {{ birthday | date : 'EEEE, MMMM d, y'}}</p>
+<div class='card'>
+  <div class='card-header'>
+    <p>{{title}} </p>
+  </div>
+  <div class="card-body">
+ 
+    <div class="row">
+      <h3>Fahrenheit to Celsius </h3>
+    </div>
+    <div class="row">
+      <p> Fahrenheit : <input type="text" [(ngModel)]="Fahrenheit" /> 
+      Celsius : {{Fahrenheit | tempconvert:'C'}} </p>
+    </div>
+ 
+    <div class="row">
+      <h3>Celsius to Fahrenheit </h3>
+    </div>
+    <div class="row">
+      <p> celsius : <input type="text" [(ngModel)]="celcius" /> 
+       Fahrenheit : {{celcius | tempconvert:'F'}} </p>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset>
+    <legend><h1>Personal Information</h1></legend>
+  <form class="form-inline" [formGroup]="user" (ngSubmit)="check()">
+    <div formGroupName="name">
+    <fieldset>
+    <legend><h1>Name</h1></legend>
+    <input type="text" formControlName="fname" placeholder="Enter First Name">
+    <input type="text" formControlName="mname" placeholder="Enter Middle Name">
+    <input type="text" formControlName="lname" placeholder="Enter Last Name">
+    </fieldset>
+    </div>
+    <div formGroupName="address">
+    <fieldset>
+    <legend><h1>Address</h1></legend>
+    <select formContolName="state" (change)="getCity($event)">
+      <option value="0">Select</option>
+      <option *ngFor="let s of state" value="{{s}}">{{s}}</option>
+      </select>
+    
+    <select formContolName="city" (change)="getPinCode($event)">
+      <option value="0">Select</option>
+      <option *ngFor="let c of city" value="{{c}}">{{c}}</option>
+      </select>
+    <input type="text" formContolName="pin" placeholder="Enter PIN" value="{{pin}}">
+    </fieldset>
+    </div>
+    <button>Submit</button>
+<p>
+<div>
+  <label for="text">Enter A Text : </label>
+  <input type="text" name="t1" id="t1">
+</div>
+<div>
+  <label for="text">Number of Letters : </label>
+  <input type="text" name="t1" id="t1">
+</div>
+
+  </form>
+</fieldset>
+
+<div>
+  <fieldset>
+    <legend>Enter Text</legend>
+      <div>
+        <input type="text" placeholder="Enter Text" [(ngModel)]="msg">
+      </div>
+      <div>{{msg|spipe}}</div>
+    </fieldset>
+</div>
+
+</body>
+</html>
+-->
+
+
+
+<app-tic-tac-toe></app-tic-tac-toe>
