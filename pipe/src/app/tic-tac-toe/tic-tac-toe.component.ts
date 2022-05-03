@@ -23,6 +23,7 @@ export class TicTacToeComponent implements OnInit {
     this.count+=1;
     console.log(this.count);
     
+    
     var x=e.target.value;
     this.mark=this.mark=="O"?"X":"O";
     this.mark1=this.mark1=="O"?"X":"O";
